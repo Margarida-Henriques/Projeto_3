@@ -1,0 +1,116 @@
+.pbasket{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    margin: 100px 150px;
+    gap: 50px;
+    
+    
+    &__row{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-content: center;
+        gap: 30px;
+        background-color: rgb(111, 111, 111);
+        padding: 20px;
+        border-radius: 10px 10px 10px 10px;
+        min-width: 500px;
+        &__left{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-content: center;
+            gap: 30px;
+        }
+        &__right{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-content: center;
+            align-items: center;
+            gap: 30px;
+            &__quantidade{
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-content: center;
+                align-items: center;
+                gap: 10px;
+
+                &n{
+                    max-width: 50px;
+                    font-size: 10px;
+                    padding: 10px;
+                    text-align: center;
+                }
+                &o{
+                    background-color: transparent;
+                    border-style: none;
+                    cursor: pointer;
+                    
+
+                }
+                &o:hover{
+                    cursor: pointer;
+                    
+                }
+                
+            }
+        }
+    }
+}
+
+
+.pitem{
+
+    &__font{
+        font-size: 15px;
+        color: rgb(230, 230, 230);
+    }
+
+    &__img{
+        max-height: 100px;
+        width: auto;
+    }
+
+    &__info{
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        justify-content: center;
+        gap: 10px;
+        }
+}
+
+.pbasket__row__end{
+    display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-content: center;
+        gap: 30px;
+        &__box{
+            background-color: rgb(111, 111, 111);
+            padding: 10px;
+            border-radius: 10px 10px 10px 10px;
+        }
+}
+
+.some__font{
+    font-size: 25px;
+}
+
+
+@media screen and (max-width: 700px){
+    .pbasket__row{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-content: center;
+    }
+    .some__font{
+        font-size: 10px;
+    }
+
+}

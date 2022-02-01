@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Squid</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="logo_1">
+            <img class="logoimg_1"src="img/logoimg_1.png" width="90px" height="90px" style="background:transparent">
+            <h1><a class="logoimg_1c" href="Projeto_3.html">Crypto Restaurant</a></h1>
+        </div>
+        <nav>
+            <ul class="nav_links">
+                <li><a href="Produtos.html" >PRODUCTS</a></li>
+                <li><a href="Comment.html" >COMMENTS</a></li>
+                <li><a href="#" >ABOUT US</a></li>
+            </ul>
+        </nav>
+        <div class="basket">
+            <!-- <li class="basket_title"><a href="#"></a>BASKET</li> -->
+            <a href="Basket.html"><button class="button_header" type="submit"><img class="img_basket" src="img/basket2.png" width="30px" height="30px" style="background:transparent"></button></a>
+            <a href="#"><button class="button_header"><img class="img_basket" src="img/info.png" width="30px" height="30px" style="background:transparent"></button></a>
+            
+        </div>
+    </header>
+    <div class="squid">
+        <div class="squid__text">
+            <div class="squid__text__t">
+                SQUID GAME SPECIAL!
+            </div>
+            <div class="squid__text__1">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facilis quaerat consequatur pariatur. Ab neque nisi, tempora, atque sapiente saepe amet cumque culpa incidunt tempore ipsum adipisci. Consequuntur eum dolorum quasi.
+                Nostrum accusantium dolorem reprehenderit impedit quasi asperiores accusamus culpa quos corrupti, aut quia cum praesentium tempore dolores illum pariatur quae dolore?
+            </div>
+            <div class="Buy">
+                <div>1250€</div>
+                <input type="button" value="BUY" class="squid__text__B"  onclick="SaveItem()">
+            </div>
+        </div>
+        <div class="squid_gallery">
+            <div class="mySlides">
+                <div class="numbertext">1 / 3</div>
+                <img src="img/squid_logo.jpg" style="width:100%">
+            </div>
+            <div class="mySlides">
+                <div class="numbertext">2 / 3</div>
+                <img src="img/squid_1.jpg" style="width:100%">
+            </div>
+            <div class="mySlides">
+                <div class="numbertext">3 / 3</div>
+                <img src="img/squid_2.jpg" style="width:100%">
+            </div>
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+        
+
+
+    </div>
+    <footer class="footer">
+        <div class="footer__row">
+            <img class="footer__row__img" src="img/logos_1.png">
+            <img class="footer__row__img" src="img/logos_2.png">
+            <img class="footer__row__img" src="img/logos_3.png">
+            <img class="footer__row__img" src="img/logos_4.png">
+            <img class="footer__row__img" src="img/logos_5.png">
+            <img class="footer__row__img" src="img/logos_6.png">
+        </div>
+    </footer>
+</body>
+
+<script>
+    var slideIndex = 1;
+    showSlides(slideIndex);
+    
+    function plusSlides(n) {
+      showSlides(slideIndex += n);
+    }
+    
+    function currentSlide(n) {
+      showSlides(slideIndex = n);
+    }
+    
+    function showSlides(n) {
+      var i;
+      var slides = document.getElementsByClassName("mySlides");
+      var dots = document.getElementsByClassName("dot");
+      if (n > slides.length) {slideIndex = 1}    
+      if (n < 1) {slideIndex = slides.length}
+      for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";  
+      }
+      for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex-1].style.display = "block";  
+      dots[slideIndex-1].className += " active";
+    }
+    </script>
+</html>

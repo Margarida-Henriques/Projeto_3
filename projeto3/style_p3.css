@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
+@keyframes rotation {
+    from {
+      transform: rotate(359deg);
+    }
+    to {
+      transform: rotate(0deg);
+    }
+  }
+
+@media (min-width:300px) {
+
+    header{
+        flex-flow: row wrap;
+    }
+    .nav_links {
+        flex-flow: wrap;
+    }
+    .basket {
+        flex-flow: wrap;
+    }
+}
+
+body{
+    background-color: rgb(39, 39, 39);
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto Mono', monospace;
+    font-weight: 500;
+    font-size: 30px;
+    color: white;
+    text-decoration: none;
+}
+
+header{
+    background-image:url(img/header.jpg);
+    box-shadow: 0px 10px 50px black;
+    background-size: 100%;
+    background-position: 0%  40%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding:80px 70px;
+    
+}
+
+.logo_1{
+    background-color: rgb(111, 32, 206);
+    display: flex;
+    align-items: center;
+    padding: 3px;
+    border-radius: 50px 50px;
+}
+.logoimg_1{
+    cursor: grab;
+    animation: rotation 7s infinite linear;
+}
+
+.logo_1 p{
+    padding-right: 17px;
+    padding-left: 10px;
+    font-size: 20px;
+}
+
+.nav_links{
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+}
+.nav_links li{
+    padding: 0px 20px;
+}
+
+.nav_links li a{
+    font-weight: 600;
+    transition: all 0.3s ease-in-out;
+}
+
+.nav_links li a:hover{
+    font-size: 31px;
+    color: rgb(111, 32, 206);
+    transition: all 0.3s ease-in-out;
+}
+
+.button_header{
+    padding: 6px 11px;
+    background-color: rgb(111, 32, 206);
+    border-style: double;
+    border-radius: 50px 50px;
+    cursor: pointer;
+    margin: 4px;
+    transition:all 0.3s ease-in-out;
+}
+
+.button_header:hover{
+    padding: 7px 12px;
+    background-color: black;
+    border-style: double;
+    cursor: pointer;
+    transition:all 0.3s ease-in-out;
+
+}
+
+.basket {
+    list-style: none;
+    display: flex;
+    margin-left: auto;
+    flex-direction: row;
+    align-items: center;
+}
+/* .basket_title{
+    padding: 0px 20px;
+    transition: all 0.2s ease 0.2s;
+} */
+/* .basket_title:hover{
+    font-size: 31px;
+    color: rgba(163, 100, 206, 0.726);
+    transition: all 0.3s ease 0s;
+} */

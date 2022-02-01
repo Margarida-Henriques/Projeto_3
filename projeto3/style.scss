@@ -1,0 +1,29 @@
+@import "./header";
+@import "./other";
+@import "./produtos";
+@import "./squid";
+@import "./basket";
+@import "./footer";
+@import "./comment";
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
+@import "./mainbody";
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto Mono', monospace;
+    font-weight: 500;
+    font-size: 30px;
+    color: white;
+    text-decoration: none;
+}
+
+p, h2{
+    color:rgb(208, 208, 208)
+}
+
+body{
+    background-color: rgb(39, 39, 39);
+}
+

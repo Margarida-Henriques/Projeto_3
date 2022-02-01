@@ -1,0 +1,64 @@
+@media (min-width:300px) {
+
+    header{
+        display: flex;
+        flex-flow: wrap;
+        justify-content: center;
+    }
+    .logo_1{
+        display: flex;
+        
+        justify-content: center;
+    }
+    .nav_links {
+        display: flex;
+        flex-flow: wrap;
+        justify-content: center;
+    }
+    .basket {
+        display: flex;
+        flex-flow: wrap;
+        justify-content: center;
+        margin: 0px;
+    }
+
+}
+
+
+
+@media screen and (max-width: 600px){
+
+    .main_text{
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+        grid-template-columns: 1fr;
+    }
+    
+    .box_1{
+        grid-row: 1;
+    }
+
+    .box_1 p{
+        font-size: 15px;
+        
+    }
+
+    .box_2{
+        display:grid;
+        grid-column: 1;
+        grid-row: 3;
+    }
+}
+
+
+
+
+
+@keyframes rotation {
+    from {
+      transform: rotate(359deg);
+    }
+    to {
+      transform: rotate(0deg);
+    }
+}
